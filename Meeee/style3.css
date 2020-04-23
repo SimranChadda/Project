@@ -1,0 +1,152 @@
+
+
+
+body{
+
+margin: 0;
+padding: 0;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+  animation:bg 20s linear infinite;
+
+
+}
+ul{
+  position: absolute;
+  top: -4px;
+  list-style: none;
+
+}
+.dddoubleUnderline{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.animation{
+  width: 1000%;
+  height: 1000%;
+
+}
+.animation div{
+
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  background-color: rgba(255, 255,255, 0.7);
+
+}
+
+.animation div:nth-child(3n+0){
+
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.7);
+
+}
+
+.animation div:nth-child(1){
+
+  top: 20%;
+  left: 50%;
+  animation:div 11s linear infinite;
+}
+
+.animation div:nth-child(2){
+
+  top: 50%;
+  left: 20%;
+  animation:div 12s linear infinite;
+}
+.animation div:nth-child(3){
+
+  top: 30%;
+  left: 10%;
+  animation:div 13s linear infinite;
+}
+.animation div:nth-child(4){
+
+  top: 40%;
+  left: 80%;
+  animation:div 14s linear infinite;
+}
+
+.animation div:nth-child(5){
+
+  top: 65%;
+  left: 40%;
+  animation:div 15s linear infinite;
+}
+
+.animation div:nth-child(6){
+
+  top: 55%;
+  left: 10%;
+  animation:div 16s linear infinite;
+}
+
+.animation div:nth-child(7){
+
+  top: 90%;
+  left: 10%;
+  animation:div 17s linear infinite;
+}
+.animation div:nth-child(8){
+
+  top:10%;
+  left:40%;
+  animation:div 18s linear infinite;
+}
+
+.animation div:nth-child(9){
+
+  top:45%;
+  left:90%;
+  animation:div 19s linear infinite;
+}
+
+.animation div:nth-child(10){
+
+  top:68%;
+  left:84%;
+  animation:div 20s linear infinite;
+}
+
+@keyframes div {
+  0%{
+    transform: scale(0) translateY(0) rotate(0);
+  }
+
+  100%{
+    transform: scale(1.1) translateY(-80px) rotate(360deg);
+  }
+
+}
+
+@keyframes bg{
+  0%{
+    background-color: #894db5;
+  }
+  25%{
+    background-color: #a5932f;
+  }
+  50%{
+    background-color: #61bc5d;
+
+  }
+  75%{
+
+    background-color: #68aaa7;
+
+  }
+  100%{
+
+    background-color: #2b41bc;
+
+  }
+}
